@@ -292,15 +292,14 @@ a:focus {
   -webkit-transform: translate(-45px, 0);
           transform: translate(-45px, 0);
 }
-
 .service_section {
   text-align: center;
 }
 
 .service_section .heading_container {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .service_section .service_container {
@@ -308,25 +307,22 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 35px 0;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .service_section .service_container .box {
   margin: 25px 1%;
-  -ms-flex-preferred-size: 31%;
-      flex-basis: 31%;
+  flex-basis: 31%;
   padding: 35px 25px 25px;
   border-radius: 15px;
-  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
-          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
   border-top: 15px solid transparent;
   overflow: hidden;
-  -webkit-transition: all .1s;
-  transition: all .1s;
+  position: relative; /* Position relative pour la carte */
 }
 
 .service_section .service_container .box .img-box {
@@ -334,11 +330,11 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 125px;
 }
 
@@ -347,7 +343,11 @@ a:focus {
 }
 
 .service_section .service_container .box .detail-box {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   margin-top: 25px;
+  margin-bottom: 25px; /* Espace entre le texte et le bouton */
 }
 
 .service_section .service_container .box .detail-box h5 {
@@ -361,26 +361,35 @@ a:focus {
 }
 
 .service_section .btn-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 25px;
+  justify-content: center;
+  margin-top: 25px; /* Espace entre le texte et le bouton */
 }
-
+.service_section .service_container .box .btn-box {
+  position: absolute;
+  bottom: 5px; /* Place le bouton en bas de la carte */
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 100%; /* Prend toute la largeur de la carte */
+  text-align: center;
+}
 .service_section .btn-box a {
   display: inline-block;
   padding: 10px 35px;
   background-color: #071777;
   color: #ffffff;
   border-radius: 35px;
+  text-align: center;
+  width: 200px; /* Largeur fixe du bouton */
+  transition: background-color .3s;
 }
 
 .service_section .btn-box a:hover {
   background-color: #071777;
 }
+
+
 
 .about_section {
   background-color: #ffffff;
@@ -514,10 +523,13 @@ a:focus {
 .contact_section input::placeholder {
   color: #737272;
 }
-
-.contact_section input.message-box {
-  height: 120px;
+.contact_section textarea.message-box {
+  color: #737272;
+  height: 150px;
+  width: 520px;
 }
+
+
 
 .contact_section button {
   border: none;
