@@ -315,14 +315,14 @@ a:focus {
 }
 
 .service_section .service_container .box {
-  margin: 25px 1%;
+  margin: 35px 1%; /* Augmenter l'espace autour de chaque carte */
   flex-basis: 31%;
   padding: 35px 25px 25px;
   border-radius: 15px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
   border-top: 15px solid transparent;
   overflow: hidden;
-  position: relative; /* Position relative pour la carte */
+  position: relative;
 }
 
 .service_section .service_container .box .img-box {
@@ -347,7 +347,7 @@ a:focus {
   flex-direction: column;
   flex-grow: 1;
   margin-top: 25px;
-  margin-bottom: 25px; /* Espace entre le texte et le bouton */
+  margin-bottom: 35px; /* Augmenter l'espace entre le texte et le bouton */
 }
 
 .service_section .service_container .box .detail-box h5 {
@@ -364,14 +364,15 @@ a:focus {
   display: flex;
   justify-content: center;
   margin-top: 25px; /* Espace entre le texte et le bouton */
+  margin-bottom: 20px;
 }
 .service_section .service_container .box .btn-box {
   position: absolute;
-  bottom: 5px; /* Place le bouton en bas de la carte */
+  bottom: 1px; /* Déplacer le bouton plus bas */
   left: 50%;
   transform: translateX(-50%);
   display: block;
-  width: 100%; /* Prend toute la largeur de la carte */
+  width: 100%; 
   text-align: center;
 }
 .service_section .btn-box a {
