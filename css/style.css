@@ -906,30 +906,6 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 /*-------------------------------------
         7. Experience
 -------------------------------------*/
-.experience_Section {
-  background:  white;
-  padding-top:  50px;
-  font-family: 'Poppins', sans-serif;
-}
-.experience-content {padding-top: 100px;}
-.single-timeline-box {margin-bottom: 75px;}
-
-/*experience-time*/
-.experience-time {
-  position: relative;
-}
-.experience-time h2 {
-  font-weight: 200;
-  right: 90px;
-}
-.experience-time h3 {
-  font-size: 16px;
-  font-weight: 300;
-  color: #636a82;
-  margin-top: 14px;
-  text-transform: uppercase;
-}
-/*experience-time*/
 
 /*main-timeline*/
 .main-timeline{
